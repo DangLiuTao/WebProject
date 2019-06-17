@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 视窗配置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 开启ie8的标准渲染模式 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+	<!-- 导航栏开始 -->
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-default">
+			  <div class="container">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" 
+							data-target=".collapse">
+						 <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					   <a href="index.html" class="navbar-brand cc">Admin Manger</a>
+				  </div>
+				  <div class="navbar-collapse collapse">
+					 <ul class="nav navbar-nav  navbar-left text-center">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+						<li><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+						<li  class="active"><a href="#"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;内容管理</a></li>
+						<li><a href="tagadmin.html"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a></li>
+					 </ul> 
+					<ul class="nav navbar-nav  navbar-right text-center">
+						<li class="dropdown">
+							<a class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								Admin<span class="caret"></span>
+							</a>
+							 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp;前台主页</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户信息</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+							 </ul>
+						</li>
+						<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+					</ul> 
+				  </div>
+			  </div>
+			</nav>
+	<!-- 导航栏结束 -->
+	<!-- 内容开始 -->
+		   <div class="col-md-3">
+				<div class="list-group">
+				    <a href="#" class="list-group-item active">文章管理</a>
+				    <a href="addContent.html" role = "button" class="list-group-item" >添加文章</a>
+				</div>
+		   </div>
+		   <div class="col-md-9">
+			   <div class="panel-header">
+				   <h1 class="panel-header_h1">文章管理</h1>
+			   </div>
+			   <ul class="nav nav-tabs">
+					<li role="presentation" class="active"><a href="#">文章列表</a></li>
+					<li role="presentation"><a href="addContent.html">添加文章</a></li>
+			   </ul>
+			   <table class="table search-border">
+				   <thead>
+					   <tr>
+						   <tH>文章标题</tH>
+						   <tH>作者</tH>
+						   <tH>发布时间</tH>
+						   <tH>操作</tH>			
+					   </tr>
+				   </thead>
+				   <tbody>
+					   <tr>
+					   	<td>标题文章</td>
+					   	<td>张三</td>
+					   	<td>2019-5-24</td>
+					   	<td>
+							<div role="presentation" class="dropdown">
+							    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							        操作
+							        <span class="caret"></span>
+							    </button>
+							    <ul class="dropdown-menu">
+							        <li>
+							            <a href="#">编辑</a>
+							        </li>
+							        <li>
+							            <a href="#">删除</a>
+							        </li>
+							        <li>
+							            <a href="#">锁定</a>
+							        </li>
+							        <li>
+							            <a href="#">修改密码</a>
+							        </li>
+							    </ul>
+							</div>
+						</td>
+					   </tr>
+				    <tr>
+				    	<td>标题文章</td>
+				    	<td>张三</td>
+				    	<td>2019-5-24</td>
+				    	<td>
+				    							<div role="presentation" class="dropdown">
+				    							    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				    							        操作
+				    							        <span class="caret"></span>
+				    							    </button>
+				    							    <ul class="dropdown-menu">
+				    							        <li>
+				    							            <a href="#">编辑</a>
+				    							        </li>
+				    							        <li>
+				    							            <a href="#">删除</a>
+				    							        </li>
+				    							        <li>
+				    							            <a href="#">锁定</a>
+				    							        </li>
+				    							        <li>
+				    							            <a href="#">修改密码</a>
+				    							        </li>
+				    							    </ul>
+				    							</div>
+				    						</td>
+				    </tr>
+					  <tr>
+					  	<td>标题文章</td>
+					  	<td>张三</td>
+					  	<td>2019-5-24</td>
+					  	<td>
+					  							<div role="presentation" class="dropdown">
+					  							    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					  							        操作
+					  							        <span class="caret"></span>
+					  							    </button>
+					  							    <ul class="dropdown-menu">
+					  							        <li>
+					  							            <a href="#">编辑</a>
+					  							        </li>
+					  							        <li>
+					  							            <a href="#">删除</a>
+					  							        </li>
+					  							        <li>
+					  							            <a href="#">锁定</a>
+					  							        </li>
+					  							        <li>
+					  							            <a href="#">修改密码</a>
+					  							        </li>
+					  							    </ul>
+					  							</div>
+					  						</td>
+					  </tr>
+					     <tr>
+					     	<td>标题文章</td>
+					     	<td>张三</td>
+					     	<td>2019-5-24</td>
+					     	<td>
+					     							<div role="presentation" class="dropdown">
+					     							    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					     							        操作
+					     							        <span class="caret"></span>
+					     							    </button>
+					     							    <ul class="dropdown-menu">
+					     							        <li>
+					     							            <a href="#">编辑</a>
+					     							        </li>
+					     							        <li>
+					     							            <a href="#">删除</a>
+					     							        </li>
+					     							        <li>
+					     							            <a href="#">锁定</a>
+					     							        </li>
+					     							        <li>
+					     							            <a href="#">修改密码</a>
+					     							        </li>
+					     							    </ul>
+					     							</div>
+					     						</td>
+					     </tr>
+					 <tr>
+					 	<td>标题文章</td>
+					 	<td>张三</td>
+					 	<td>2019-5-24</td>
+					 	<td>
+					 							<div role="presentation" class="dropdown">
+					 							    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					 							        操作
+					 							        <span class="caret"></span>
+					 							    </button>
+					 							    <ul class="dropdown-menu">
+					 							        <li>
+					 							            <a href="#">编辑</a>
+					 							        </li>
+					 							        <li>
+					 							            <a href="#">删除</a>
+					 							        </li>
+					 							        <li>
+					 							            <a href="#">锁定</a>
+					 							        </li>
+					 							        <li>
+					 							            <a href="#">修改密码</a>
+					 							        </li>
+					 							    </ul>
+					 							</div>
+					 						</td>
+					 </tr>
+				   </tbody>
+			   </table>
+		   </div>
+		   <!-- 分页开始 -->
+		   <nav aria-label="..." class="text-right">
+			  <ul class="pagination">
+				<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+				<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">2 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">4 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">5 <span class="sr-only">(current)</span></a></li>
+				<li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+				
+			  </ul>
+			</nav>
+			<div class="col-md-12">
+				<p class="text-center ps">Copyright @ 河南省周口市川汇区</p>
+			</div>
+	</div>
+</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+<style>
+	.btn-default {
+	    color: #333;
+	    background-color: #F8F8F8;
+	    border-color: #F8F8F8;
+	}
+	.panel-header_h1{
+		font-size: 20px;
+		 line-height: 30px;
+		padding: 0px 0 15px 0;
+		margin-top: -18px;
+		border-bottom: 1px solid #DDDDDD;
+	}
+	.search-border{
+		border: 0.5px solid #DDDDDD;
+		border-top: none;
+		/* border-bottom: none; */
+	}
+	.table>thead>tr>th{
+	    border-bottom: none;
+	}
+</style>
+</html>

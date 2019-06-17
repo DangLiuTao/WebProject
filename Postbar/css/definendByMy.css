@@ -1,0 +1,59 @@
+.btn-default {
+    color: #333;
+    background-color: #F8F8F8;
+    border-color: #F8F8F8;
+}
+.alert{
+	background: #f2Dede;
+	/* a94442 */
+}
+.alert p{
+	color: #a94442;
+	font-size: 18px;
+}
+.panel{
+	background: #F8F8F8;
+	height: 40px;
+}
+.panel-body{
+	border: #DDDDDD 1px solid;
+}
+.list-group{
+	border: #DDDDDD 1px solid;
+}
+.media-body{
+	color: #000000;
+	font-size: 18px;
+vertical-align: middle;
+}
+.mtop{
+	margin-top: 15px;
+	background: #FFFFFF;
+	border: 0.5px solid #ADADAD;
+}
+.td{
+	margin-top: 15px;
+}
+
+element.style {
+}
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+	font-size:18px;
+}
+.ps{
+	color: #000000;
+	font-weight: 500;
+}
+.nav-pills_uls{
+	border: #ADADAD 0.5PX solid;
+}

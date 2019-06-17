@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		 <!-- 视窗配置 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 开启ie8的标准渲染模式 -->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/definendByMy.css"  rel="stylesheet"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" 
+						data-target=".collapse">
+					 <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				   <a href="index.html" class="navbar-brand cc">Admin Manger</a>
+			  </div>
+			  <div class="navbar-collapse collapse">
+				 <ul class="nav navbar-nav  navbar-left text-center">
+				 	<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+				 	<li><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+				 	<li><a href="textadimin.html"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;内容管理</a></li>
+				 	<li><a href="tagadmin.html"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;标签管理</a></li>
+				 </ul> 
+				<ul class="nav navbar-nav  navbar-right text-center">
+					<li class="dropdown">
+						<a class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Admin<span class="caret"></span>
+						</a>
+						 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							<li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp;前台主页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;个人主页</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;个人设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;账户信息</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
+					     </ul>
+					</li>
+					<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+				</ul> 
+			  </div>
+		  </div>
+		</nav>
+		<!-- 导航栏结束 警告框开始 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="alert alert-warning alert-dismissible" role="alert">
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						  <span aria-hidden="true">&times;</span></button>
+					  <strong>
+						<p class="reds">
+							网站内容有漏洞，请修复！！
+						</p>
+						<p class="reds">当前版本存在很大的bug，请处理。</p>
+					  </strong>
+					  <button type="button" class="btn btn-danger">立刻处理</button>
+					  <button type="button" class="btn btn-default"  data-dismiss="alert">稍后处理</button>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title">网站统计数据</h3>
+					  </div>
+					  <div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<td>统计项目</td>
+									<td>昨日</td>
+									<td>今日</td>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- <tr>
+									<td>统计项目</td>
+									<td>昨日</td>
+									<td>今日</td>
+								</tr>
+								<tr>
+									<td>统计项目</td>
+									<td>昨日</td>
+									<td>今日</td>
+								</tr>
+								<tr>
+									<td>统计项目</td>
+									<td>昨日</td>
+									<td>今日</td>
+								</tr>
+								<tr>
+									<td>统计项目</td>
+									<td>昨日</td>
+									<td>今日</td>
+								</tr> -->
+							</tbody>
+						</table>
+					  </div>
+					</div>
+				</div>
+				<!-- 第二 右侧列表 -->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title">网站热帖</h3>
+					  </div>
+						<ul class="list-group list-groups">
+							<!-- <li class="list-group-item">
+								<a href="#">
+									<span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;今日发帖量已经达到
+									<small class="pull-right">2018/5/29</small>
+								</a>
+							</li> -->
+						</ul>
+					</div>
+				</div>
+				<!-- 第三 :图表 -->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title">网站热帖</h3>
+					  </div>
+					   <div class="panel-body">
+					      <canvas id="canvas" class="col-md-12">
+					  
+					      </canvas>
+					  </div>
+					</div>
+				</div>
+				<!-- 第四 进度条四个-->
+				<div class="col-md-6">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h3 class="panel-title">设备使用率</h3>
+					  </div>
+					   <div class="panel-body">
+						  <div class="progress">
+						     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								<span class="sr-only">40% Complete (success)</span>
+						     </div>
+						  </div>
+						  <div class="progress">
+						     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						  								<span class="sr-only">40% Complete (success)</span>
+						     </div>
+						  </div>
+						  <div class="progress">
+						     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						  								<span class="sr-only">40% Complete (success)</span>
+						     </div>
+						  </div>
+						<button class="btn-info">ddd</button>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						 <div class="panel-heading">
+							<h3 class="panel-title">设备使用率</h3>
+						</div>
+					    <div class="panel-body">
+							<div class="col-md-7">
+								<div class="media well">
+								    <div class="media-left">
+								        <a href="#">
+								        <img class="media-object wh64" src="img/BBS-1.png" alt="花无缺">
+								        </a>
+								    </div>
+								    <div class="media-body">
+								        <h4 class="media-heading">花无缺</h4>
+								        对对对
+								    </div>
+								</div>
+								<div class="media well">
+									 <div class="media-body text-right">
+									    <h4 class="media-heading">花无缺</h4>
+									    对对对
+									</div>
+								    <div class="media-right">
+								        <a href="#">
+								        <img class="media-object wh64" src="img/BBS-2.png" alt="花无缺">
+								        </a>
+								    </div>
+								   
+								</div>
+								<div class="media well">
+								    <div class="media-left">
+								        <a href="#">
+								        <img class="media-object wh64" src="img/BBS-1.png" alt="花无缺">
+								        </a>
+								    </div>
+								    <div class="media-body">
+								        <h4 class="media-heading">花无缺</h4>
+								        对对对
+								    </div>
+								</div>
+								<div class="media well">
+									<div class="media-body text-right">
+									    <h4 class="media-heading">花无缺</h4>
+									    对对对
+									</div>
+								    <div class="media-right">
+								        <a href="#">
+								        <img class="media-object wh64" src="img/BBS-2.png" alt="花无缺">
+								        </a>
+								    </div>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<h4>
+									请输入留言内容
+								</h4>
+								<textarea class="form-control"cols="10" rows="5" placeholder="请输入留言内容"></textarea>
+								<a class="btn btn-default text-center mtop" href="#" role="button">留言</a>
+								<div class="panel panel-default td">
+								    <div class="panel-heading ">
+										<h3 class="panel-title">团队联系手册</h3>
+									</div>
+								    <div class="panel-body">
+											<ul class="list-group">
+												<li class="list-group-item">
+														站长:彤彤sb &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>
+														 &nbsp;&nbsp;tel: &nbsp;&nbsp;15285256253
+												</li>
+												<li class="list-group-item">
+														站长:彤彤sb &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>
+														 &nbsp;&nbsp;tel: &nbsp;&nbsp;15285256253
+												</li>
+												<li class="list-group-item">
+														站长:彤彤sb &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>
+														 &nbsp;&nbsp;tel: &nbsp;&nbsp;15285256253
+												</li>
+												<li class="list-group-item">
+														站长:彤彤sb &nbsp;&nbsp;<span class="glyphicon glyphicon-phone"></span>
+														 &nbsp;&nbsp;tel: &nbsp;&nbsp;15285256253
+												</li>
+											</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<p class="text-center ps">Copyright @ 河南省周口市川汇区</p>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- js配置 -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/Chart.min.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			$(function(){
+				var arr=[
+					{name:"统计项目",text:"昨日",as:"今日"},
+					{name:"统计项目",text:"昨日",as:"今日"},
+					{name:"统计项目",text:"昨日",as:"今日"},
+					{name:"统计项目",text:"昨日",as:"今日"}
+				];
+				var $tbody=$(".panel-body tbody");
+				for(var i=1;i<arr.length;i++){
+					var $tr=$("<tr></tr>");
+					var $td1=$("<td class=td"+i+">"+arr[i].name+"</td>");
+					var $td2=$("<td>"+arr[i].text+"</td>");
+					var $td3=$("<td>"+arr[i].as+"</td>");
+					$tr.append($td1);
+					$tr.append($td2);
+					$tr.append($td3);
+					$tr.appendTo($tbody);
+				};
+				var arrs=[
+				{name:"&nbsp;&nbsp;今日发帖量已经达到",sname:"2018/5/29",spanclass:"list-alt",href:"#"},
+				{name:"&nbsp;&nbsp;今日发帖量已经达到",sname:"2018/5/29",spanclass:"list-alt",href:"#"},
+				{name:"&nbsp;&nbsp;今日发帖量已经达到",sname:"2018/5/29",spanclass:"list-alt",href:"#"},
+				{name:"&nbsp;&nbsp;今日发帖量已经达到",sname:"2018/5/29",spanclass:"list-alt",href:"#"},
+				{name:"&nbsp;&nbsp;今日发帖量已经达到",sname:"2018/5/29",spanclass:"list-alt",href:"#"}
+				];
+				var $ul=$(".list-groups");
+				for(var i=0;i<arrs.length;i++){
+					var $li=$('<li class="list-group-item"><a href="'+arrs[0].href+'"><span class="glyphicon-'+arrs[0].spanclass+'"></span>'+arrs[0].name+'<small class="pull-right">'+arrs[0].sname+'</small></a></li>')
+					$li.appendTo($ul);
+				}
+				var i=1;
+				setInterval(()=>{
+					i+=5;
+					if(i>=100){
+						i=100;
+					}
+					$(".progress-bar").text(i+"%");
+					$(".progress-bar").width(i+"%");
+				},1000)
+				var z=0;
+				$(".btn-info").click(function(){
+					var carr=["green","pink","yellow","#005a5b"];
+					if(z==carr.length){
+						z=0;
+					}
+					$(".progress-bar").css('background-color',carr[z]);
+					$(".btn-info").css('background-color',carr[z]);
+					// $(".btn-info").css('boder-color',carr[z]);
+					z++;
+				})
+			})
+		</script>
+	</body>
+</html>
